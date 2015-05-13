@@ -1,0 +1,12 @@
+diff -Naur network-manager-applet-1.0.2.orig/nm-applet.desktop.in network-manager-applet-1.0.2/nm-applet.desktop.in
+--- network-manager-applet-1.0.2.orig/nm-applet.desktop.in	2015-05-13 18:36:07.619910005 +0700
++++ network-manager-applet-1.0.2/nm-applet.desktop.in	2015-05-13 18:37:07.027159368 +0700
+@@ -6,7 +6,7 @@
+ Terminal=false
+ Type=Application
+ NoDisplay=true
+-NotShowIn=KDE;GNOME;
++NotShowIn=KDE;
+ X-GNOME-Bugzilla-Bugzilla=GNOME
+ X-GNOME-Bugzilla-Product=NetworkManager
+ X-GNOME-Bugzilla-Component=nm-applet
