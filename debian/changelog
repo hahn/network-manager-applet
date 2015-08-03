@@ -1,3 +1,19 @@
+network-manager-applet (1.0.4-1blankon1) tambora; urgency=medium
+
+  * New Upstream Release
+  * Merge Whit sid
+
+ -- Rahman Yusri Aftian <aftian@di.blankon.in>  Tue, 04 Aug 2015 00:16:52 +0700
+
+network-manager-applet (1.0.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Make no-patch-numbers the default for gbp pq to avoid unnecessary noise.
+  * Refresh patches.
+  * Update symbols file for libnm-gtk0.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 29 Jul 2015 01:08:38 +0200
+
 network-manager-applet (1.0.2-1blankon1) tambora; urgency=medium
 
   * Add patch: show-applet-on-gnome.patch  
