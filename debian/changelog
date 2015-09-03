@@ -1,9 +1,17 @@
-network-manager-applet (1.0.4-1blankon1) tambora; urgency=medium
+network-manager-applet (1.0.6-1blankon1) tambora; urgency=medium
 
-  * New Upstream Release
-  * Merge Whit sid
+  * Rebuild 
 
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Tue, 04 Aug 2015 00:16:52 +0700
+ -- Mahyuddin <yudi.al@gmail.com>  Thu, 03 Sep 2015 09:23:37 +0700
+
+network-manager-applet (1.0.6-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Refresh patches.
+  * Update symbols file, the symbols introduced in 1.0.4 now use symbol
+    versioning.
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 28 Aug 2015 17:21:30 +0200
 
 network-manager-applet (1.0.4-1) unstable; urgency=medium
 
@@ -13,12 +21,6 @@ network-manager-applet (1.0.4-1) unstable; urgency=medium
   * Update symbols file for libnm-gtk0.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 29 Jul 2015 01:08:38 +0200
-
-network-manager-applet (1.0.2-1blankon1) tambora; urgency=medium
-
-  * Add patch: show-applet-on-gnome.patch  
-
- -- Mahyuddin <yudi.al@gmail.com>  Wed, 13 May 2015 18:42:22 +0700
 
 network-manager-applet (1.0.2-1) unstable; urgency=medium
 
