@@ -1,3 +1,106 @@
+network-manager-applet (1.2.2-1blankon1) tambora; urgency=medium
+
+  * Rebuild
+
+ -- Syai Mif <syaimif@di.blankon.in>  Wed, 15 Jun 2016 13:16:48 +0700
+
+network-manager-applet (1.2.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Rebase patches.
+  * Bump Standards-Versiont to 3.9.8.
+  * Bump network-manager related (build-)dependencies to >= 1.2.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 11 May 2016 18:33:00 +0200
+
+network-manager-applet (1.2.0-2) unstable; urgency=medium
+
+  * Stop using -X for dh_install. Some files were not installed by accident
+    because of that. Instead explicity remove .a and .la files and use
+    --fail-missing while at it.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 26 Apr 2016 16:42:05 +0200
+
+network-manager-applet (1.2.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update debian/copyright.
+  * Bump dependencies of libnm-gtk-dev and libnma-dev on the NetworkManager
+    dev packages to (>= 1.1).
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 22 Apr 2016 17:30:12 +0200
+
+network-manager-applet (1.1.93-1) unstable; urgency=medium
+
+  * New upstream release (1.2 rc1).
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 06 Apr 2016 01:06:03 +0200
+
+network-manager-applet (1.1.92-1) unstable; urgency=medium
+
+  * New upstream release (1.2 beta3).
+  * Drop dependency on libdbus-glib-1-dev.
+  * Rebase patches.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 31 Mar 2016 00:35:34 +0200
+
+network-manager-applet (1.1.91-1) unstable; urgency=medium
+
+  * New upstream release (1.2 beta2).
+  * Rebase patches.
+  * Fix build system to run tests on "make check".
+  * Dump the contents of test-suite.log to stdout when the test suite fails.
+  * Skip the test suite if "nocheck" is set via DEB_BUILD_OPTIONS.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 02 Mar 2016 01:30:35 +0100
+
+network-manager-applet (1.1.90-3) unstable; urgency=medium
+
+  * Upload to unstable.
+  * Bump Standards-Version to 3.9.7.
+  * Fix test suite failure for non-C locales. Patch cherry-picked from
+    upstream Git.
+  * Fix fix macro name GLIB_GSETTINGS in configure.ac. Patch cherry-picked
+    from upstream Git.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 04 Feb 2016 06:19:15 +0100
+
+network-manager-applet (1.1.90-2) experimental; urgency=medium
+
+  * Update debian/copyright.
+  * Run test suite during build.
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 22 Jan 2016 04:38:01 +0100
+
+network-manager-applet (1.1.90-1) experimental; urgency=medium
+
+  * New upstream release (1.2 beta1).
+  * Bump dependency on network-manager and related dev packages to (>= 1.1).
+  * Update configure switches. The gnome-bluetooth plugin and the migration
+    tool were dropped upstream, the --with-modem-manager-1 configure switch
+    was renamed to --with-wwan.
+  * Rebase patches.
+  * Install AppData file for nm-connection-editor.
+  * Add packages for new libnma library.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 20 Jan 2016 23:49:18 +0100
+
+network-manager-applet (1.0.10-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Rebase patches.
+  * Use dh_autoreconf --as-needed to avoid unnecessary shlibs dependencies.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 24 Dec 2015 01:18:49 +0100
+
+network-manager-applet (1.0.8-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Refresh patches.
+  * Disable migration tool for NM <= 0.8 settings.
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 20 Nov 2015 18:35:54 +0100
+
 network-manager-applet (1.0.6-2blankon1) tambora; urgency=medium
 
   * Rebuild 
