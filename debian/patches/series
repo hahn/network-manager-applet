@@ -1,5 +1,5 @@
 Allow-to-create-connections-without-admin-privileges.patch
 Force-online-state-with-unmanaged-devices.patch
 show-applet-on-gnome.patch
-#Don-t-hard-code-gnome-bluetooth-plugin-directory.patch
+Don-t-hard-code-gnome-bluetooth-plugin-directory.patch
 
