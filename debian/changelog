@@ -1,3 +1,9 @@
+network-manager-applet (1.2.2-1blankon1) tambora; urgency=medium
+
+  * Fixed #104
+
+ -- Syai Mif <syaimif@di.blankon.in>  Thu, 16 Jun 2016 09:09:04 +0700
+
 network-manager-applet (1.2.2-1) unstable; urgency=medium
 
   * New upstream release.
