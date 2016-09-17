@@ -1,14 +1,33 @@
-network-manager-applet (1.2.2-2blankon2) tambora; urgency=medium
+network-manager-applet (1.4.0-2blankon1) tambora; urgency=medium
 
-  * Build Support ARMHF
+  * Upstream release
 
- -- Mahyuddin <yudi.al@gmail.com>  Sat, 03 Sep 2016 15:48:24 +0700
+ -- Mijortsa <mijortsa@blankon.id>  Sun, 18 Sep 2016 04:25:35 +0700
 
-network-manager-applet (1.2.2-2blankon1) tambora; urgency=medium
+network-manager-applet (1.4.0-2) unstable; urgency=medium
 
-  * Rebuild
+  * Replace Depends: dbus-x11 with Depends: default-dbus-session-bus |
+    dbus-session-bus so that either dbus-user-session or dbus-x11 can be used.
+    (Closes: #836037)
 
- --  Syai Mif <syaimif@di.blankon.in>  Thu, 16 Jun 2016 16:44:32 +0700
+ -- Michael Biebl <biebl@debian.org>  Tue, 30 Aug 2016 12:59:12 +0200
+
+network-manager-applet (1.4.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Rebase patches.
+  * Bump network-manager related (build-)dependencies to >= 1.4.
+  * Enable team and team-port configuration support. Requires Jansson for
+    handling JSON data.
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 26 Aug 2016 16:45:48 +0200
+
+network-manager-applet (1.2.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Rebase patches.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 04 Aug 2016 08:12:19 +0200
 
 network-manager-applet (1.2.2-2) unstable; urgency=medium
 
@@ -19,12 +38,6 @@ network-manager-applet (1.2.2-2) unstable; urgency=medium
       polkit-1-auth-agent', polkit-1-auth-agent is a virtual package
 
  -- Laurent Bigonville <bigon@debian.org>  Sun, 05 Jun 2016 13:23:10 +0200
-
-network-manager-applet (1.2.2-1blankon1) tambora; urgency=medium
-
-  * Fixed #104
-
- -- Syai Mif <syaimif@di.blankon.in>  Thu, 16 Jun 2016 09:09:04 +0700
 
 network-manager-applet (1.2.2-1) unstable; urgency=medium
 
@@ -813,7 +826,7 @@ network-manager-applet (0.7.0-1) experimental; urgency=low
     - The nm-editor tool has been replaced by nm-connection-editor.
       (Closes: #494148, #482107, #485651)
     - Show the correct configuration for WPA Enterprise setups in
-      nm-connection-editor (Closes: #480039)
+      nm-connection-editor (Closes: #480039)  
 
   [ Sjoerd Simons ]
   * debian/patches/02-nm-api-update.patch:
@@ -903,9 +916,9 @@ network-manager-applet (0.6.6-1) unstable; urgency=low
     - Better handling of VPN and WPA Enterprise security. (Closes: #444977)
   * debian/control
     - The Vcs-* fields are now officially supported, so remove the XS- prefix.
-    - Bump Standards-Version to 3.7.3. No further changes required.
+    - Bump Standards-Version to 3.7.3. No further changes required. 
     - Fix Xfce spelling error in the package description.
-    - Bump Build-Depends on libnm-util-dev and network-manager-dev to
+    - Bump Build-Depends on libnm-util-dev and network-manager-dev to 
       (>= 0.6.6).
   * Removed patches
     - debian/patches/10-po_fr.patch (merged upstream)
@@ -936,7 +949,7 @@ network-manager-applet (0.6.5-3) unstable; urgency=low
 network-manager-applet (0.6.5-2) unstable; urgency=low
 
   * debian/patches/30-connection_info_hide_on_delete_event.patch
-    - Patch from Ubuntu. Hide connection info dialog on delete-event.
+    - Patch from Ubuntu. Hide connection info dialog on delete-event. 
       (Closes: #406073)
 
  -- Michael Biebl <biebl@debian.org>  Wed, 19 Sep 2007 22:34:18 +0200
